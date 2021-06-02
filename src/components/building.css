@@ -1,0 +1,192 @@
+
+
+/* BUILDING */
+#building-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    margin-left: 40px;
+}
+
+/* ROOF */
+#roof-container {
+    display: flex;
+    align-content: flex-end;
+    height: 300px;
+    /* margin-top: 50px;  */
+}
+
+:root {
+    --colour1: black;
+    --colour2: rgb(74, 86, 97);
+    --colour3: slategray;
+    --trans: transparent;
+  }
+.roof {
+    height: 300px;
+    width: 100%;
+    margin-top: 50px;
+	background-color: var(--colour2);
+	background-image:
+		repeating-radial-gradient(
+			circle at 0.5em 0,
+			var(--colour1),
+			var(--colour2) 0.4em,
+			var(--colour3) 0.45em,
+			var(--trans) 0.51em,
+			var(--trans) 3em);
+	background-size: 1em 0.5em;
+    transform-style: preserve-3d;
+    
+}
+.roof::before {
+	background-image:
+		repeating-radial-gradient(
+			circle at 0.5em 0,
+			var(--colour1),
+			var(--colour2) 0.4em,
+			var(--colour3) 0.45em,
+			var(--colour3) 0.5em,
+			var(--trans) 0.51em,
+			var(--trans) 3em);
+	background-position: 0.5em 0.75em;
+}
+.roof::after {
+	background-image:
+		repeating-radial-gradient(
+			circle at 0.5em -0.25em,
+			var(--colour1),
+			var(--colour2) 0.4em,
+			var(--colour3) 0.45em,
+			var(--colour3) 0.5em,
+			var(--trans) 0.51em,
+			var(--trans) 3em);
+	background-position: 0.0em 0.25em;
+}
+.roof::before, .roof::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-size: 1em 0.5em;
+} 
+.chimney-background {
+    position: absolute;
+    margin-top: 50px;
+    border-right: 200px solid transparent;
+    border-top: 300px solid white;
+    z-index: 1;
+}
+
+#chimney {
+    display: flex;
+    position: absolute;
+    flex-direction: column-reverse;
+    width: 120px;
+    height: 350px;
+    margin: -24px 10px;
+    background-color: transparent;
+    z-index: 3;
+    
+}
+
+#chi-1 {
+    position: relative;
+    left: 10px;
+    width: 0;
+    height: 0;
+    margin-bottom: 6px;
+    border-top: 150px solid #C3B188;
+    border-right: 100px solid transparent;
+}
+
+#chi-2 {
+    position: relative;
+    left: 10px;
+    width: 100px;
+    height: 140px;
+    background-color: #B49374;
+    background-image: linear-gradient(#C3B188, #C9B58D, #C3B188);
+}
+
+#chi-3 {
+    position: relative;
+    width: 120px;
+    height: 10px;
+    background-color: #B49374;
+    background-image: linear-gradient( #C3B188, #9c7f63);
+}
+
+#chi-4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.chi-pipe {
+    width: 20px;
+    height: 45px;
+    margin: 0 15px;
+    background-color: lightgoldenrodyellow;
+    background-image: linear-gradient(to right, #C38135, #794735);
+}
+
+/* WALL */
+#wall-container {
+    border-top: solid #C3B188 4px;
+    padding: 50px 0;
+}
+
+.brick {
+    flex: 1 1 auto;
+    background-color: antiquewhite;
+    background-image: 
+        linear-gradient(343deg, #C3B188 25px, transparent 25px),
+        linear-gradient(163deg, #C9B58D 25px, transparent 25px),
+        linear-gradient(343deg, #C3B188 25px, transparent 25px),
+        linear-gradient(163deg, #C9B58D 25px, transparent 25px);
+    background-size: 88px 58px;
+    background-position: 2px 2px, 4px 34px, 29px 31px, 31px 5px;
+}
+
+/* WINDOWS */
+.level-container {
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 960px) {
+    .level-container {
+      width: 100%;
+    }
+    #wall-container, #roof-container {
+        margin-left: 50px;
+        /* transform: skewY(-5deg); */
+    }
+}
+
+.window-container {
+    height: 400px;
+    width: 350px;
+    border: solid white 4px;
+}
+
+@media screen and (max-width: 500px) {
+    .window-container {
+    height: 320px;
+    width: 280px;
+    }
+}
+
+.window-animation {
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+}
+
+.window-story {
+    background-color: salmon;
+    height: 100%;
+    width: 100%;
+}
