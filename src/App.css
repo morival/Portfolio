@@ -18,13 +18,6 @@
   margin: 20px;
 }
 
-.project-container {
-  margin: 15px;
-  padding: 5px;
-  border: solid black 4px;
-  max-width: 400px;
-  height: 400px;
-}
 
 @media screen and (min-width: 960px) {
   .container {
