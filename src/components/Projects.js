@@ -3,7 +3,7 @@ import React from "react";
 function Projects() {
 
     return(
-        <section id="projects flex">
+        <section id="projects">
             <h2>Projects</h2>
             <div className="container flex">
                 <div className="project-container flex">
