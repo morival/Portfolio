@@ -1,9 +1,26 @@
 
 .project-container {
-    margin: 15px;
-    padding: 5px;
-    border: solid cadetblue 20px;
-    border-radius: 20px;
-    max-width: 400px;
-    height: 400px;
-  }
+  margin: 15px;
+  /* padding: 5px; */
+  border: solid cadetblue 20px;
+  border-radius: 20px;
+  max-width: 400px;
+  height: 364px;
+}
+
+.project-img {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+img {
+  width: 140%;
+}
+
+.project-info {
+  visibility: hidden;
+}
+.project-info:hover {
+  visibility: visible;
+}
