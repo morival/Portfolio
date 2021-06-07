@@ -1,55 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from './Modal';
+// import { Transition } from 'react-transition-group';
 import './project.css';
 import project_01 from '../resources/project_01.jpg';
 import project_02 from '../resources/project_02.jpg';
+import project_03 from '../resources/project_03.jpg';
 
-function Projects() {
+
+function Projects({ setShowModal }) {
+
+    const [isShown1, setIsShown1] = useState(false);
+    const [isShown2, setIsShown2] = useState(false);
+    const [isShown3, setIsShown3] = useState(false);
+    
 
     return(
         <section id="projects">
             <h2>Projects</h2>
             <div className="container flex">
-                <div className="project-container">
-                    <div className="project-img">
+                <div className="project-container" 
+                onMouseEnter={() => setIsShown1(true)}
+                onMouseLeave={() => setIsShown1(false)}>
+                    {!isShown1 && <div className="project-img">
                         <img src={project_01} alt="project-1" />
-                    </div>
-                    <div className="project-info">
-                        <h3>My Destination | Travel Planner/Tracker | Solo Project</h3>
-                        <p>
-                            A full stack web application with CRUD functions created using Python. 
-                            The app enables users to plan, track and manage travel adventures. 
-                            Built over 5 days using Flask framework and SQL for the backend database.
-                        </p>
-                    </div>
+                    </div>}
+                    {isShown1 && <div className="project-info">
+                        <h2>My Destination</h2>
+                        <h3>Python/Flask</h3>
+                        <button className="btn-open-modal"
+                        onClick={() => setShowModal(1)}>Show more</button>
+                    </div>}
                     
                 </div>
-                <div className="project-container">
-                    <div className="project-img">
+                <div className="project-container" 
+                onMouseEnter={() => setIsShown2(true)}
+                onMouseLeave={() => setIsShown2(false)}>
+                    {!isShown2 && <div className="project-img">
                         <img src={project_02} alt="project-2" />
-                    </div>
-                    <div className="project-info">
-                        <h3>Cosmodex | Educational App | Group Project</h3>
-                        <p>
-                            An educational application built using the Vue.js framework. 
-                            Designed with schoolchildren in mind, it educates the user about the Solar System in a fun and interactive way. 
-                            The app renders components dynamically based on JSON format data fetched from external APIs and a MongoDB server.
-                        </p>
-                    </div>
-                    
+                    </div>}
+                    {isShown2 && <div className="project-info">
+                        <h2>Cosmodex</h2>
+                        <h3>Vue.js/MongoDB</h3>
+                        <button className="btn-open-modal"
+                        onClick={() => setShowModal(2)}>Show more</button>
+                    </div>}
                 </div>
-                <div className="project-container">
-                    <div className="project-img">
-
-                    </div>
-                    <div className="project-info">
-                        <h3>Shop Local | eCommerce App | Group Project</h3>
-                        <p>
-                            An e-commerce application that provides commercial clients with a platform to promote their businesses and enables individual customers to find and book services available in their local area. 
-                            The application is built with responsive components and laid out using the React framework. 
-                            Backend written using Spring Data REST in Java.
-                        </p>
-                    </div>
-                    
+                <div className="project-container"
+                onMouseEnter={() => setIsShown3(true)}
+                onMouseLeave={() => setIsShown3(false)}>
+                    {!isShown3 && <div className="project-img">
+                        <img src={project_03} alt="project-3" />
+                    </div>}
+                    {isShown3 && <div className="project-info">
+                        <h2>Shop Local</h2>
+                        <h3>React.js/Spring Data REST</h3>
+                        <button className="btn-open-modal"
+                        onClick={() => setShowModal(3)}>Show more</button>
+                    </div>}
                 </div>
             </div>
         </section>

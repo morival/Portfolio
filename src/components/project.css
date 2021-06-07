@@ -1,26 +1,29 @@
 
 .project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 15px;
-  /* padding: 5px; */
   border: solid cadetblue 20px;
   border-radius: 20px;
-  max-width: 400px;
+  width: 400px;
   height: 364px;
 }
 
 .project-img {
+  position: relative;
   display: flex;
   justify-content: center;
   overflow: hidden;
 }
 
-img {
-  width: 140%;
+.project-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.project-info {
-  visibility: hidden;
-}
-.project-info:hover {
-  visibility: visible;
+.project-img > img {
+  height: 364px;
 }
