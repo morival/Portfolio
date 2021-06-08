@@ -29,3 +29,14 @@
 .project-img > img {
   height: 364px;
 }
+
+.btn-open-modal {
+  background: #2c2c2c;
+  color: white;
+  font-size: 1rem;
+  margin: 2rem;
+  padding: .5rem 1.8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

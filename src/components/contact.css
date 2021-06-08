@@ -4,3 +4,49 @@
     padding: 50px;
 }
 
+/* form {
+    
+} */
+
+input[type=text], input[type=email], textarea {
+    background: #1E242C;
+    margin: 2px;
+    padding: 10px 15px;
+    min-width: 95%;
+    font-size: 18px;
+    border-style: none;
+    color: white;
+}
+.form-footer{
+    display: flex;
+    justify-content: center;
+    /* min-width: 95%; */
+}
+
+@media screen and (min-width: 769px) {
+    input[type=text], input[type=email], textarea, .btn-wrapper{
+        width: 600px;
+        min-width: 30%;
+    }
+}
+
+textarea {
+    min-height: 150px;
+}
+
+.btn-wrapper{
+    width: 630px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-submit {
+    background: #2c2c2c;
+    color: white;
+    font-size: 1rem;
+    
+    padding: .5rem 1.8rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

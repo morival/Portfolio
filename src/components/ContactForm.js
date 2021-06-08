@@ -26,18 +26,22 @@ const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" required />
+        {/* <label htmlFor="name">Name:</label> */}
+        <input placeholder="Name" type="text" id="name" required />
       </div>
       <div>
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" required />
+        {/* <label htmlFor="email">Email:</label> */}
+        <input placeholder="Email" type="email" id="email" required />
       </div>
       <div>
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" required />
+        {/* <label htmlFor="message">Message:</label> */}
+        <textarea placeholder="Message" id="message" required />
       </div>
-      <button type="submit">{status}</button>
+      <div className="form-footer">
+        <div className="btn-wrapper">
+          <button className="btn-submit" type="submit">{status}</button>
+        </div>
+      </div>
     </form>
   );
 };

@@ -13,14 +13,14 @@
       left: 20%;
       
     }
-  }
+}
 @media screen and (min-width: 1201px) {
     .modal-wrapper {
       width: 50%;
       left: 25%;
       
     }
-  }
+}
 
 .modal-header {
     background: black;
