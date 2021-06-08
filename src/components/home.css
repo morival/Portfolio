@@ -4,7 +4,6 @@
     height: calc(100vh - 50px);
     display: flex;
     align-items: center;
-    justify-content: space-between;
     font-size: calc(10px + 2vmin);
     color: white;
   }

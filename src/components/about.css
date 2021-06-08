@@ -1,0 +1,16 @@
+.skill-set-header{
+    margin: 15px;
+}
+
+.skill-set-content {
+    display: flex;
+    margin: 10px;
+}
+
+.skill-set-list {
+    margin: 10px;
+}
+
+.skill-set-item {
+    margin: 10px;
+}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Modal from './Modal';
+// import Modal from './Modal';
 // import { Transition } from 'react-transition-group';
 import './project.css';
 import project_01 from '../resources/project_01.jpg';
