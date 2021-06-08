@@ -1,3 +1,8 @@
+#projects {
+  padding: 40px;
+  /* background:#758097; */
+  background: tomato;
+}
 
 .project-container {
   display: flex;
@@ -6,9 +11,10 @@
   width: 400px;
   height: 364px;
   margin: 15px;
-  border: solid cadetblue 20px;
+  /* border: solid cadetblue 20px; */
   /* border: solid tomato 20px; */
-  border-radius: 20px;
+  border-radius: 5px;
+  background: white;
   cursor: pointer;
 }
 
@@ -39,4 +45,7 @@
   border: none;
   outline: none;
   cursor: pointer;
+}
+.btn-open-modal:hover {
+  color:tomato;
 }

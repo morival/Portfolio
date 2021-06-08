@@ -8,7 +8,7 @@ function Home() {
         <section id="home">
             <div className="home-intro">
                 <h2>
-                    Hi. I'm Matt Harlos.
+                    Hi. I'm <span className="highlight">Matt Harlos</span>.
                     <br/> I'm a full-stack software developer.
                 </h2>
             </div>

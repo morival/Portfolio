@@ -16,7 +16,7 @@ function Projects({ setShowModal }) {
 
     return(
         <section id="projects">
-            <h2>Projects</h2>
+            <h2>My Projects</h2>
             <div className="container flex">
                 <div className="project-container" 
                 onMouseEnter={() => setIsShown1(true)}

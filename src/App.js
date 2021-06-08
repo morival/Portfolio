@@ -24,10 +24,10 @@ function App() {
       <Nav/>
       <About/>
       <Projects setShowModal={setShowModal}/>
-      <Modal/>
       {/* <Building/> */}
       <Contact/>
       <Footer/>
+      <Modal/>
     </div>
   );
 }

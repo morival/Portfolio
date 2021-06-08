@@ -1,13 +1,15 @@
 * {
   margin: 0;
+  font-family: "Roboto Slab";
 }
+
+
 .App {
   text-align: center;
   /* display: flex;
   flex-direction: column;
   align-items: center; */
 }
-
 
 .flex {
   display: flex;

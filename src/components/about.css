@@ -1,3 +1,11 @@
+#about {
+    padding: 40px;
+}
+
+.about-content {
+    margin: 40px;
+}
+
 .skill-set-header{
     margin: 15px;
 }
@@ -13,4 +21,8 @@
 
 .skill-set-item {
     margin: 10px;
+}
+
+.skill-set-icon img {
+    height: 50px;
 }

@@ -4,21 +4,30 @@
     height: calc(100vh - 50px);
     display: flex;
     align-items: center;
-    font-size: calc(10px + 2vmin);
     color: white;
-  }
+}
 
-  .home-intro {
-      z-index: 2;
-  }
+.home-intro {
+    margin: 50px;
+    z-index: 2;
+}
 
-  .home-background {
-      position: absolute;
-      right: 0;
-      display: flex;
-      height: calc(100vh - 50px);
-  }
+.home-intro h2 {
+    font-size: calc(10px + 2vmin);
+}
 
-  #home-background {
+h2 .highlight {
+    color: tomato;
+    
+}
+
+.home-background {
+    position: absolute;
+    right: 0;
+    display: flex;
+    height: calc(100vh - 50px);
+}
+
+#home-background {
       height: 100%;
-  }
+}

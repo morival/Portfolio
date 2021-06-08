@@ -1,5 +1,18 @@
 import React from "react";
 import "./about.css"
+import html_css from '../resources/html-css.svg';
+import js from '../resources/js.svg';
+import java from '../resources/java.svg';
+import python from '../resources/python.svg';
+import php from '../resources/php.svg';
+import psql from '../resources/psql.svg';
+import react from '../resources/react.svg';
+import vue from '../resources/vue.svg';
+import flask from '../resources/flask.svg';
+import wp from '../resources/wp.svg';
+import ps from '../resources/ps.svg';
+import il from '../resources/il.svg';
+
 
 function About() {
 
@@ -9,7 +22,7 @@ function About() {
                 About Me
             </h2>
             <div className="flex">
-                <div>
+                <div className="about-content">
                     <p>I am an enthusiastic and dedicated Software Developer with excellent interpersonal and problem-solving skills as well as great analytic and planning ability. 
                         My collaborative mindset and passion for coding makes me a reliable and adaptable teammate, who is keen to step out of his comfort zone and constantly keep learning. 
                         I have a strong interest in innovative software engineering projects that require creativity, attention to detail, and both abstract and strategic thinking.
@@ -21,37 +34,37 @@ function About() {
                         <ul className="skill-set-list">
                             <li className="skill-set-item">
                                 <div className="skill-set-icon">
-                                    <img src="" alt="HTML/CSS"/>
+                                    <img src={html_css} alt="HTML/CSS"/>
                                 </div>
                                 <div className="skill-set-detail"></div>
                             </li>
                             <li className="skill-set-item">
                                 <div className="skill-set-icon">
-                                    <img src="" alt="JavaScript"/>
+                                    <img src={js} alt="JavaScript"/>
                                 </div>
                                 <div className="skill-set-detail"></div>
                             </li>
                             <li className="skill-set-item">
                                 <div className="skill-set-icon">
-                                    <img src="" alt="Java"/>
+                                    <img src={java} alt="Java"/>
                                 </div>
                                 <div className="skill-set-detail"></div>
                             </li>
                             <li className="skill-set-item">
                                 <div className="skill-set-icon">
-                                    <img src="" alt="Python"/>
+                                    <img src={python} alt="Python"/>
                                 </div>
                                 <div className="skill-set-detail"></div>
                             </li>
                             <li className="skill-set-item">
                                 <div className="skill-set-icon">
-                                    <img src="" alt="PHP"/>
+                                    <img src={php} alt="PHP"/>
                                 </div>
                                 <div className="skill-set-detail"></div>
                             </li>
                             <li className="skill-set-item">
                                 <div className="skill-set-icon">
-                                    <img src="" alt="SQL"/>
+                                    <img src={psql} alt="PSQL"/>
                                 </div>
                                 <div className="skill-set-detail"></div>
                             </li>
@@ -59,37 +72,37 @@ function About() {
                         <ul className="skill-set-list">
                             <li className="skill-set-item">
                                 <div className="skill-set-icon">
-                                    <img src="" alt="React.js"/>
+                                    <img src={react} alt="React.js"/>
                                 </div>
                                 <div className="skill-set-detail"></div>
                             </li>
                             <li className="skill-set-item">
                                 <div className="skill-set-icon">
-                                    <img src="" alt="Vue.js"/>
+                                    <img src={vue} alt="Vue.js"/>
                                 </div>
                                 <div className="skill-set-detail"></div>
                             </li>
                             <li className="skill-set-item">
                                 <div className="skill-set-icon">
-                                    <img src="" alt="Flask"/>
+                                    <img src={flask} alt="Flask"/>
                                 </div>
                                 <div className="skill-set-detail"></div>
                             </li>
                             <li className="skill-set-item">
                                 <div className="skill-set-icon">
-                                    <img src="" alt="WordPress"/>
+                                    <img src={wp} alt="WordPress"/>
                                 </div>
                                 <div className="skill-set-detail"></div>
                             </li>
                             <li className="skill-set-item">
                                 <div className="skill-set-icon">
-                                    <img src="" alt="Photoshop"/>
+                                    <img src={ps} alt="Photoshop"/>
                                 </div>
                                 <div className="skill-set-detail"></div>
                             </li>
                             <li className="skill-set-item">
                                 <div className="skill-set-icon">
-                                    <img src="" alt="Illustrator"/>
+                                    <img src={il} alt="Illustrator"/>
                                 </div>
                                 <div className="skill-set-detail"></div>
                             </li>

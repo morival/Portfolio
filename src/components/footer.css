@@ -26,6 +26,9 @@
     padding: 5px;
     color: white;
 }
+.icon:hover {
+    color: tomato;
+}
 
 .footnote {
     margin-top: 30px;

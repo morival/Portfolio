@@ -1,12 +1,35 @@
 #contact {
     background: #373c47;
     color: white;
-    padding: 50px;
+    padding-bottom: 40px;
 }
 
-/* form {
-    
-} */
+.deco-container {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.deco-left, .deco-right {
+    /* position: relative; */
+    background: tomato;
+    height: 0;
+    width: 0;
+    border-bottom: solid #373c47 150px;
+}
+
+.deco-left {
+    border-right: solid transparent 50vw;
+}
+
+.deco-right {
+    border-left: solid transparent 50vw;
+}
+
+/* FORM */
+#contact > form {
+    margin: 25px;
+    padding: 25px;
+}
 
 input[type=text], input[type=email], textarea {
     background: #1E242C;
@@ -32,6 +55,8 @@ input[type=text], input[type=email], textarea {
 
 textarea {
     min-height: 150px;
+    max-height: 500px;
+    max-width: 80vw;
 }
 
 .btn-wrapper{
@@ -44,9 +69,11 @@ textarea {
     background: #2c2c2c;
     color: white;
     font-size: 1rem;
-    
     padding: .5rem 1.8rem;
     border: none;
     outline: none;
     cursor: pointer;
+}
+.btn-submit:hover {
+    color: tomato;
 }
