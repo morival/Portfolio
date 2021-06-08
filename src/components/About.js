@@ -18,9 +18,7 @@ function About() {
 
     return(
         <section id="about">
-            <h2>
-                About Me
-            </h2>
+            <h2>About Me</h2>
             <div className="flex">
                 <div className="about-content">
                     <p>I am an enthusiastic and dedicated Software Developer with excellent interpersonal and problem-solving skills as well as great analytic and planning ability. 
@@ -29,7 +27,7 @@ function About() {
                     </p>
                 </div>
                 <div className="skill-set-container">
-                    <div className="skill-set-header"><h3>Skill set</h3></div>
+                    <div className="skill-set-header"><h2>Skill set</h2></div>
                     <div className="skill-set-content">
                         <ul className="skill-set-list">
                             <li className="skill-set-item">

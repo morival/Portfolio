@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     color: white;
+    overflow: hidden;
 }
 
 .home-intro {
@@ -13,7 +14,7 @@
 }
 
 .home-intro h2 {
-    font-size: calc(10px + 2vmin);
+    font-size: calc(24px + .8vw);
 }
 
 h2 .highlight {
@@ -28,6 +29,13 @@ h2 .highlight {
     height: calc(100vh - 50px);
 }
 
-#home-background {
+@media screen and (max-width: 1201px) {
+    .home-background {
+        right: -300px;
+        overflow: hidden;
+    }
+}
+
+#home-background-image {
       height: 100%;
 }

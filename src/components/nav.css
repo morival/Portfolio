@@ -17,6 +17,10 @@
     cursor: pointer;
 }
 
+.section-link a {
+    font-size: calc(12px + .8vw);
+}
+
 a.active {
     color: red;
 }

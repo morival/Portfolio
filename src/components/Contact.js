@@ -14,9 +14,7 @@ function Contact() {
                     <div className="deco-right"></div>
                 </div> */}
             </div>
-            <h2>
-                Contact Me
-            </h2>
+            <h2>Contact Me</h2>
             <ContactForm/>
         
         </section>

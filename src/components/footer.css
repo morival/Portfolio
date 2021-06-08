@@ -7,11 +7,14 @@
 
 .arrow-up {
     position: relative;
-    top: -33px;
-    width: 40px;
+    top: -23px;
+    width: 50px;
     border-radius: 5px;
     cursor: pointer;
     background: tomato;
+}
+.arrow-up svg:hover {
+    color: red;
 }
 
 .icon-container {
@@ -22,7 +25,7 @@
 }
 
 .icon {
-    font-size: 30px;
+    font-size: 35px;
     padding: 5px;
     color: white;
 }
@@ -31,8 +34,8 @@
 }
 
 .footnote {
-    margin-top: 30px;
-    font-size: 16px;
+    margin: 40px 0;
+    font-size: calc(8px + .8vw);
     opacity: .6;
 
 }

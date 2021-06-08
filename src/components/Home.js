@@ -13,7 +13,7 @@ function Home() {
                 </h2>
             </div>
             <div className="home-background">
-                <img id="home-background" src={home_background} alt="home-background" />
+                <img id="home-background-image" src={home_background} alt="home-background" />
             </div>
             
         
