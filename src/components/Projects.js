@@ -28,7 +28,7 @@ function Projects({ setShowModal }) {
                         <h2>My Destination</h2>
                         <h3>Python/Flask</h3>
                         <button className="btn-open-modal"
-                        onClick={() => setShowModal(1)}>Show more</button>
+                        onClick={() => setShowModal(project_01)}>Show more</button>
                     </div>}
                     
                 </div>
@@ -42,7 +42,7 @@ function Projects({ setShowModal }) {
                         <h2>Cosmodex</h2>
                         <h3>Vue.js/MongoDB</h3>
                         <button className="btn-open-modal"
-                        onClick={() => setShowModal(2)}>Show more</button>
+                        onClick={() => setShowModal(project_02)}>Show more</button>
                     </div>}
                 </div>
                 <div className="project-container"
@@ -55,7 +55,7 @@ function Projects({ setShowModal }) {
                         <h2>Shop Local</h2>
                         <h3>React.js/Spring Data REST</h3>
                         <button className="btn-open-modal"
-                        onClick={() => setShowModal(3)}>Show more</button>
+                        onClick={() => setShowModal(project_03)}>Show more</button>
                     </div>}
                 </div>
             </div>

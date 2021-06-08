@@ -16,7 +16,7 @@
   justify-content: center;
 }
 
-.flex.row {
+.row {
   flex-direction: row;
 }
 

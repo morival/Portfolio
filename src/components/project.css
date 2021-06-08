@@ -3,11 +3,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px;
-  border: solid cadetblue 20px;
-  border-radius: 20px;
   width: 400px;
   height: 364px;
+  margin: 15px;
+  border: solid cadetblue 20px;
+  /* border: solid tomato 20px; */
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .project-img {

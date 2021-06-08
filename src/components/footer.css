@@ -1,0 +1,39 @@
+.footer-container {
+    height: 20vh;
+    width: 100%;
+    background: #2A2E37;
+    color: white;
+}
+
+.arrow-up {
+    position: relative;
+    top: -33px;
+    width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: tomato;
+}
+
+.icon-container {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background: #373c47;
+}
+
+.icon {
+    font-size: 30px;
+    padding: 5px;
+    color: white;
+}
+
+.footnote {
+    margin-top: 30px;
+    font-size: 16px;
+    opacity: .6;
+
+}
+
+.footnote .highlight {
+    color: tomato;
+}
