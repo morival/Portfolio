@@ -5,12 +5,23 @@
 }
 
 .deco-container {
-    display: flex;
-    padding-bottom: 100px;
+    width: 0; 
+    height: 0; 
+    border-left: calc(50vw - 11px) solid transparent;
+    border-right: calc(50vw - 11px) solid transparent;
+    border-top: 150px solid tomato;
+    margin-bottom: 150px;
+}
+
+.deco-side-container {
+    width: 50%;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .deco-left, .deco-right {
-    /* position: relative; */
+    position: absolute;
     background: tomato;
     height: 0;
     width: 0;
@@ -18,11 +29,11 @@
 }
 
 .deco-left {
-    border-right: solid transparent 50vw;
+    border-right: solid transparent ;
 }
 
 .deco-right {
-    border-left: solid transparent 50vw;
+    border-left: solid transparent ;
 }
 
 /* FORM */
