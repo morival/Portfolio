@@ -14,29 +14,35 @@
       
     }
 }
-@media screen and (min-width: 1201px) {
+/* @media screen and (min-width: 1201px) {
     .modal-wrapper {
       width: 50%;
       left: 25%;
-      
     }
-}
-@media screen and (max-width: 768px) {
     .modal-header {
-        padding: 5px;
+        padding: 1rem;
+    }
+    .modal-body p {
+        padding: 0;
+        margin: 0;
+    }
+} */
+/* @media screen and (max-width: 768px) {
+    .modal-header {
+        
     }
     .modal-body p {
         padding: 0;
     }
-}
+} */
 
 .modal-header {
     background: black;
     color: white;
-    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: calc(5px + .6vw) calc(10px + .6vw);
 }
 
 .modal-header span {
@@ -65,16 +71,16 @@
 }
 
 .modal-body h4 {
-    font-size: 1.8rem;
+    font-size: calc(14px + .8vw);
     color: orange;
 }
 
 .modal-body p {
-    font-size: 1rem;
+    font-size: calc(10px + .4vw);
     background: white;
     color: black;
-    padding: 1rem;
-    margin: 1rem 0 2rem 0;
+    padding: 15px;
+    margin: 10px;
 }
 .btn {
     cursor: pointer;
