@@ -108,3 +108,15 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .skill-set-item {
+        min-width: 300px;
+    }
+    .skill-set-icon img {
+        height: 40px;
+    }
+    .skill-set-icon {
+        width: 80px;
+    }
+  }

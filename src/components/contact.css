@@ -88,3 +88,13 @@ textarea {
 .btn-submit:hover {
     color: tomato;
 }
+
+@media screen and (max-width: 768px) {
+    .deco-container {
+        border-left: 50vw solid transparent;
+        border-right: 50vw solid transparent;
+    }
+    input[type=text], input[type=email], textarea, .btn-wrapper{
+        padding: 0;
+    }
+  }
