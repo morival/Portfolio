@@ -30,7 +30,6 @@ function Projects({ setShowModal }) {
                         <button className="btn-open-modal"
                         onClick={() => setShowModal(project_01)}>Show more</button>
                     </div>}
-                    
                 </div>
                 <div className="project-container" 
                 onMouseEnter={() => setIsShown2(true)}

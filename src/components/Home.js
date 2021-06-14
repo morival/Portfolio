@@ -1,6 +1,6 @@
 import React from "react";
 import './home.css';
-import home_background from '../resources/home_background.jpg';
+import home_background from '../resources/home_background_m.jpg';
 
 function Home() {
 

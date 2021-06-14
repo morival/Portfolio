@@ -13,28 +13,6 @@
     margin-bottom: 150px;
 }
 
-.deco-side-container {
-    width: 50%;
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-.deco-left, .deco-right {
-    position: absolute;
-    background: tomato;
-    height: 0;
-    width: 0;
-    border-bottom: solid #373c47 150px;
-}
-
-.deco-left {
-    border-right: solid transparent ;
-}
-
-.deco-right {
-    border-left: solid transparent ;
-}
 
 /* FORM */
 #contact > form {
