@@ -15,14 +15,14 @@ function Footer() {
                 </Link>
                 <div className="icon-wrap flex row">
                     <div className="icon-container">
-                        <a href="https://www.linkedin.com/in/mateusz-harlos/">
+                        <a href="https://www.linkedin.com/in/mateusz-harlos/" target="_blank">
                             <div className="flex icon">
                                 <FaLinkedin/>
                             </div>
                         </a>
                     </div>
                     <div className="icon-container">
-                        <a href="https://github.com/morival">
+                        <a href="https://github.com/morival" target="_blank">
                             <div className="flex icon">
                                 <FaGithub/>
                             </div>

@@ -36,6 +36,13 @@ h2 .highlight {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .home-background {
+        right: -150px;
+        overflow: hidden;
+    }
+}
+
 #home-background-image {
       height: 100%;
 }
