@@ -11,7 +11,7 @@
 }
 
 .about-content {
-    margin: 40px;
+    margin: calc(10px + 1vh)
 }
 
 .skill-set-header{
