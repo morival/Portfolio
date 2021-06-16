@@ -63,7 +63,7 @@ const github = (showModal) => {
             <div className="modal-header">
                 <h3>{modalLabel(showModal)}</h3>
                 <span className="close-modal-btn"
-                onClick={close}>x</span>
+                onClick={close}>X</span>
             </div>
             <div className="modal-image">
                 <img src={showModal} alt=""/>
