@@ -1,41 +1,33 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import './contact.css';
 
 const ContactForm = () => {
   const [status, setStatus] = useState("Submit");
-  const handleSubmit = async (e) => {
+  function handleSubmit(e) {
     e.preventDefault();
     setStatus("Sending...");
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    let response = await fetch("http://localhost:3002/send", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
+    emailjs.sendForm('service_i65egiq', 'template_bt9gzqs', e.target, 'user_LLai35aJu2cbdz6qblrbK')
+      .then((result) => {
+          console.log(result.text);
+          e.target.reset();
+          setStatus("Message Sent");
+      }, (error) => {
+          console.log(error.text);
+          setStatus("error");
+      });
+      
   };
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        {/* <label htmlFor="name">Name:</label> */}
-        <input placeholder="Name" type="text" id="name" required />
+        <input placeholder="Name" type="text" id="name" name="name" required />
       </div>
       <div>
-        {/* <label htmlFor="email">Email:</label> */}
-        <input placeholder="Email" type="email" id="email" required />
+        <input placeholder="Email" type="email" id="email" name="email" required />
       </div>
       <div>
-        {/* <label htmlFor="message">Message:</label> */}
-        <textarea placeholder="Message" id="message" required />
+        <textarea placeholder="Message" id="message" name="message" required />
       </div>
       <div className="form-footer">
         <div className="btn-wrapper">
