@@ -19,7 +19,12 @@
 
 h2 .highlight {
     color: tomato;
+    font-size: calc(34px + .8vw);
     
+}
+
+.matt {
+    font-family: "RaviPrakash-Regular";
 }
 
 .home-background {

@@ -1,5 +1,11 @@
 @font-face {
-    font-family: "Roboto Slab";
-    src: local("Roboto Slab"),
-    url("./fonts/RobotoSlab/RobotoSlab-Regular.ttf") format("truetype");
-  }
+  font-family: "Roboto Slab";
+  src: local("Roboto Slab"),
+  url("./fonts/RobotoSlab/RobotoSlab-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RaviPrakash-Regular";
+  src: local("RaviPrakash-Regular"),
+  url("./fonts/RaviPrakash-Regular.ttf") format("truetype");
+}
