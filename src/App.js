@@ -13,25 +13,26 @@ import Modal from './components/Modal';
 
 function App() {
 
-  const [showModal, setShowModal] = useState(null);
+  const [modal, setModal] = useState(null);
 
-  const closeModalHandler = () => setShowModal(null);
-
-  
+  const closeModalHandler = () => setModal(null);
 
   return (
     <div className="App">
-      {showModal ? <div className="back-drop"
-      onClick={closeModalHandler}></div> : null}
-      <Modal showModal={showModal} close={closeModalHandler}/>
+      {modal !== null
+        ? <div className="back-drop"
+        onClick={closeModalHandler}>
+        <Modal modal={modal} close={closeModalHandler}/></div>
+        : null
+      }
       <Home/>
       <Nav/>
       <About/>
-      <Projects setShowModal={setShowModal}/>
+      <Projects setModal={setModal}/>
       {/* <Building/> */}
       <Contact/>
       <Footer/>
-      <Modal/>
+      {/* <Modal/> */}
     </div>
   );
 }

@@ -62,6 +62,11 @@
     padding: calc(3px + .7vh) calc(8px + .6vw);
     margin: 10px;
 }
+
+.modal-links {
+    display: flex;
+}
+
 .btn {
     cursor: pointer;
     display: block;
@@ -70,8 +75,9 @@
     /* outline: none; */
 }
 
-.btn-github {
+.btn-links {
     padding: .5rem 1rem;
+    margin: 0 10px;
     background: cadetblue;
     color: white;
 }

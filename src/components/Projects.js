@@ -7,7 +7,7 @@ import project_02 from '../resources/project_02.jpg';
 import project_03 from '../resources/project_03.jpg';
 
 
-function Projects({ setShowModal }) {
+function Projects({ setModal }) {
 
     const [isShown1, setIsShown1] = useState(false);
     const [isShown2, setIsShown2] = useState(false);
@@ -28,7 +28,7 @@ function Projects({ setShowModal }) {
                         <h2>My Destination</h2>
                         <h3>Python/Flask</h3>
                         <button className="btn-open-modal"
-                        onClick={() => setShowModal(project_01)}>Show more</button>
+                        onClick={() => setModal(project_01)}>Show more</button>
                     </div>}
                 </div>
                 <div className="project-container" 
@@ -41,7 +41,7 @@ function Projects({ setShowModal }) {
                         <h2>Cosmodex</h2>
                         <h3>Vue.js/MongoDB</h3>
                         <button className="btn-open-modal"
-                        onClick={() => setShowModal(project_02)}>Show more</button>
+                        onClick={() => setModal(project_02)}>Show more</button>
                     </div>}
                 </div>
                 <div className="project-container"
@@ -54,7 +54,7 @@ function Projects({ setShowModal }) {
                         <h2>Shop Local</h2>
                         <h3>React.js/Spring Data REST</h3>
                         <button className="btn-open-modal"
-                        onClick={() => setShowModal(project_03)}>Show more</button>
+                        onClick={() => setModal(project_03)}>Show more</button>
                     </div>}
                 </div>
             </div>
