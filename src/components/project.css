@@ -59,4 +59,7 @@
   .project-img > img {
     height: 273px;
   }
+  .project-info > h4 {
+    font-size: 1.6vw;
+  }
 }

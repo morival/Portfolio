@@ -16,6 +16,93 @@ import il from '../resources/il.svg';
 
 function About() {
 
+    const skillSet = [{
+        name: "HTML / CSS",
+        knowledge: "Excellent",
+        img: html_css,
+        procentage: "skill-set-bar procent90"
+    },{
+        name: "JavaScript",
+        knowledge: "Very Good",
+        img: js,
+        procentage: "skill-set-bar procent80"
+    },{
+        name: "Java",
+        knowledge: "Good",
+        img: java,
+        procentage: "skill-set-bar procent70"
+    },{
+        name: "Python",
+        knowledge: "Good",
+        img: python,
+        procentage: "skill-set-bar procent70"
+    },{
+        name: "PHP",
+        knowledge: "Good",
+        img: php,
+        procentage: "skill-set-bar procent70"
+    },{
+        name: "PostgreSQL",
+        knowledge: "Fair",
+        img: psql,
+        procentage: "skill-set-bar procent60"
+    },{
+        name: "React.js",
+        knowledge: "Very Good",
+        img: react,
+        procentage: "skill-set-bar procent80"
+    },{
+        name: "Vue.js",
+        knowledge: "Good",
+        img: vue,
+        procentage: "skill-set-bar procent70"
+    },{
+        name: "Flask",
+        knowledge: "Fair",
+        img: flask,
+        procentage: "skill-set-bar procent60"
+    },{
+        name: "WordPress",
+        knowledge: "Fair",
+        img: wp,
+        procentage: "skill-set-bar procent50"
+    },{
+        name: "Photoshop",
+        knowledge: "Fair",
+        img: ps,
+        procentage: "skill-set-bar procent50"
+    },{
+        name: "Illustrator",
+        knowledge: "Fair",
+        img: il,
+        procentage: "skill-set-bar procent50"
+    }];
+
+    const column1 = skillSet.slice(0, 6)
+    const column2 = skillSet.slice(6, 12)
+
+    // Generate Skill Column
+    const column = (col) => {
+        return(
+            col.map((item, index) => {
+                return(
+                    <li className="skill-set-item" key={index}>
+                        <div className="skill-set-icon">
+                            <img src={item.img} alt={item.name}/>
+                        </div>
+                        <div className="skill-set-detail">
+                            <div className="skill-set-title">
+                                <div className="skill-name">{item.name}</div>
+                                <div className="skill-procentage">{item.knowledge}</div>
+                            </div>
+                            <div className={item.procentage}/>
+                        </div>
+                    </li>
+                )
+            })
+        )
+    }
+
     return(
         <section id="about">
             <h2>About Me</h2>
@@ -30,152 +117,10 @@ function About() {
                     <div className="skill-set-header"><h2>Skill set</h2></div>
                     <div className="skill-set-content">
                         <ul className="skill-set-list">
-                            <li className="skill-set-item">
-                                <div className="skill-set-icon">
-                                    <img src={html_css} alt="HTML/CSS"/>
-                                </div>
-                                <div className="skill-set-detail">
-                                    <div className="skill-set-title">
-                                        <div className="skill-name">HTML / CSS</div>
-                                        <div className="skill-procentage">90%</div>
-                                    </div>
-                                    <div className="skill-set-bar procent90"/>
-                                </div>
-                            </li>
-                            <li className="skill-set-item">
-                                <div className="skill-set-icon">
-                                    <img src={js} alt="JavaScript"/>
-                                </div>
-                                <div className="skill-set-detail">
-                                    <div className="skill-set-title">
-                                        <div className="skill-name">JavaScript</div>
-                                        <div className="skill-procentage">70%</div>
-                                    </div>
-                                    <div className="skill-set-bar procent70"/>
-                                </div>
-                            </li>
-                            <li className="skill-set-item">
-                                <div className="skill-set-icon">
-                                    <img src={java} alt="Java"/>
-                                </div>
-                                <div className="skill-set-detail">
-                                    <div className="skill-set-title">
-                                        <div className="skill-name">Java</div>
-                                        <div className="skill-procentage">70%</div>
-                                    </div>
-                                    <div className="skill-set-bar procent70"/>
-                                </div>
-                            </li>
-                            <li className="skill-set-item">
-                                <div className="skill-set-icon">
-                                    <img src={python} alt="Python"/>
-                                </div>
-                                <div className="skill-set-detail">
-                                    <div className="skill-set-title">
-                                        <div className="skill-name">Python</div>
-                                        <div className="skill-procentage">70%</div>
-                                    </div>
-                                    <div className="skill-set-bar procent70"/>
-                                </div>
-                            </li>
-                            <li className="skill-set-item">
-                                <div className="skill-set-icon">
-                                    <img src={php} alt="PHP"/>
-                                </div>
-                                <div className="skill-set-detail">
-                                    <div className="skill-set-title">
-                                        <div className="skill-name">PHP</div>
-                                        <div className="skill-procentage">60%</div>
-                                    </div>
-                                    <div className="skill-set-bar procent60"/>
-                                </div>
-                            </li>
-                            <li className="skill-set-item">
-                                <div className="skill-set-icon">
-                                    <img src={psql} alt="PSQL"/>
-                                </div>
-                                <div className="skill-set-detail">
-                                    <div className="skill-set-title">
-                                        <div className="skill-name">PostgreSQL</div>
-                                        <div className="skill-procentage">60%</div>
-                                    </div>
-                                    <div className="skill-set-bar procent60"/>
-                                </div>
-                            </li>
+                            {column(column1)}
                         </ul>
                         <ul className="skill-set-list">
-                            <li className="skill-set-item">
-                                <div className="skill-set-icon">
-                                    <img src={react} alt="React.js"/>
-                                </div>
-                                <div className="skill-set-detail">
-                                    <div className="skill-set-title">
-                                        <div className="skill-name">React.js</div>
-                                        <div className="skill-procentage">70%</div>
-                                    </div>
-                                    <div className="skill-set-bar procent70"/>
-                                </div>
-                            </li>
-                            <li className="skill-set-item">
-                                <div className="skill-set-icon">
-                                    <img src={vue} alt="Vue.js"/>
-                                </div>
-                                <div className="skill-set-detail">
-                                    <div className="skill-set-title">
-                                        <div className="skill-name">Vue.js</div>
-                                        <div className="skill-procentage">70%</div>
-                                    </div>
-                                    <div className="skill-set-bar procent70"/>
-                                </div>
-                            </li>
-                            <li className="skill-set-item">
-                                <div className="skill-set-icon">
-                                    <img src={flask} alt="Flask"/>
-                                </div>
-                                <div className="skill-set-detail">
-                                    <div className="skill-set-title">
-                                        <div className="skill-name">Flask</div>
-                                        <div className="skill-procentage">60%</div>
-                                    </div>
-                                    <div className="skill-set-bar procent60"/>
-                                </div>
-                            </li>
-                            <li className="skill-set-item">
-                                <div className="skill-set-icon">
-                                    <img src={wp} alt="WordPress"/>
-                                </div>
-                                <div className="skill-set-detail">
-                                    <div className="skill-set-title">
-                                        <div className="skill-name">WordPress</div>
-                                        <div className="skill-procentage">50%</div>
-                                    </div>
-                                    <div className="skill-set-bar procent50"/>
-                                </div>
-                            </li>
-                            <li className="skill-set-item">
-                                <div className="skill-set-icon">
-                                    <img src={ps} alt="Photoshop"/>
-                                </div>
-                                <div className="skill-set-detail">
-                                    <div className="skill-set-title">
-                                        <div className="skill-name">Photoshop</div>
-                                        <div className="skill-procentage">50%</div>
-                                    </div>
-                                    <div className="skill-set-bar procent50"/>
-                                </div>
-                            </li>
-                            <li className="skill-set-item">
-                                <div className="skill-set-icon">
-                                    <img src={il} alt="Illustrator"/>
-                                </div>
-                                <div className="skill-set-detail">
-                                    <div className="skill-set-title">
-                                        <div className="skill-name">Illustrator</div>
-                                        <div className="skill-procentage">50%</div>
-                                    </div>
-                                    <div className="skill-set-bar procent50"/>
-                                </div>
-                            </li>
+                            {column(column2)}
                         </ul>
                     </div>
                 </div>
