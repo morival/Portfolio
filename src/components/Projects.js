@@ -15,6 +15,58 @@ function Projects({ setModal }) {
     const [isShown3, setIsShown3] = useState(false);
     const [isShown4, setIsShown4] = useState(false);
     
+    const projects = [{
+        name: "Rickshaw Registry",
+        tech: "React.js (JavaScript) / Express.js / MongoDB",
+        setShow: setIsShown4,
+        show: isShown4,
+        img: project_04
+    },{
+        name: "Shop Local",
+        tech: "React.js (JavaScript) / Express.js / Spring Boot (Java)",
+        setShow: setIsShown3,
+        show: isShown3,
+        img: project_03
+    },{
+        name: "Cosmodex",
+        tech: "Vue.js (JavaScript) / Express.js / MongoDB",
+        setShow: setIsShown2,
+        show: isShown2,
+        img: project_02
+    },{
+        name: "My Destination",
+        tech: "Flask (Python) / MySQL",
+        setShow: setIsShown1,
+        show: isShown1,
+        img: project_01
+    }]
+
+    const inProgress = projects.slice(0, 1)
+    const finished = projects.slice(1,4)
+
+    const project = (col) => {
+        return(
+            col.map((item, index) => {
+                return(
+                    <div className="project-container" 
+                    key={index}
+                    onMouseEnter={() => item.setShow(true)}
+                    onMouseLeave={() => item.setShow(false)}
+                    >
+                        {!item.show && <div className="project-img">
+                            <img src={item.img} alt={item.name} />
+                        </div>}
+                        {item.show && <div className="project-info">
+                            <h2>{item.name}</h2>
+                            <h4>{item.tech}</h4>
+                            <button className="btn-open-modal"
+                            onClick={() => setModal(item.img)}>Show more</button>
+                        </div>}
+                    </div>
+                )
+            })
+        )
+    }
 
     return(
         <section id="projects">
@@ -22,67 +74,13 @@ function Projects({ setModal }) {
             <div className="container">
                 <h4>In Progress</h4>
                 <div className="container flex">
-                    <div className="project-container"
-                    onMouseEnter={() => setIsShown4(true)}
-                    onMouseLeave={() => setIsShown4(false)}
-                    >
-                        {!isShown4 && <div className="project-img">
-                            <img src={project_04} alt="project-4" />
-                        </div>}
-                        {isShown4 && <div className="project-info">
-                            <h2>Rickshaw Registry</h2>
-                            <h4>React.js (JavaScript) / Express.js / MongoDB</h4>
-                            <button className="btn-open-modal"
-                            onClick={() => setModal(project_04)}>Show more</button>
-                        </div>}
-                    </div>
+                    {project(inProgress)}
                 </div>
             </div>
             <div className="container">
                 <h4>Finished</h4>
                 <div className="container flex">
-                    <div className="project-container" 
-                    onMouseEnter={() => setIsShown1(true)}
-                    onMouseLeave={() => setIsShown1(false)}
-                    >
-                        {!isShown1 && <div className="project-img">
-                            <img src={project_01} alt="project-1" />
-                        </div>}
-                        {isShown1 && <div className="project-info">
-                            <h2>My Destination</h2>
-                            <h4>Flask (Python) / MySQL</h4>
-                            <button className="btn-open-modal"
-                            onClick={() => setModal(project_01)}>Show more</button>
-                        </div>}
-                    </div>
-                    <div className="project-container" 
-                    onMouseEnter={() => setIsShown2(true)}
-                    onMouseLeave={() => setIsShown2(false)}
-                    >
-                        {!isShown2 && <div className="project-img">
-                            <img src={project_02} alt="project-2" />
-                        </div>}
-                        {isShown2 && <div className="project-info">
-                            <h2>Cosmodex</h2>
-                            <h4>Vue.js (JavaScript) / Express.js / MongoDB</h4>
-                            <button className="btn-open-modal"
-                            onClick={() => setModal(project_02)}>Show more</button>
-                        </div>}
-                    </div>
-                    <div className="project-container"
-                    onMouseEnter={() => setIsShown3(true)}
-                    onMouseLeave={() => setIsShown3(false)}
-                    >
-                        {!isShown3 && <div className="project-img">
-                            <img src={project_03} alt="project-3" />
-                        </div>}
-                        {isShown3 && <div className="project-info">
-                            <h2>Shop Local</h2>
-                            <h4>React.js (JavaScript) / Express.js / Spring Boot (Java)</h4>
-                            <button className="btn-open-modal"
-                            onClick={() => setModal(project_03)}>Show more</button>
-                        </div>}
-                    </div>
+                    {project(finished)}
                 </div>
             </div>
         </section>
