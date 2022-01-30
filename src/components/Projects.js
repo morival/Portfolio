@@ -10,34 +10,34 @@ import project_04 from '../resources/project_04.jpg';
 
 function Projects({ setModal }) {
 
-    const [isShown1, setIsShown1] = useState(false);
-    const [isShown2, setIsShown2] = useState(false);
-    const [isShown3, setIsShown3] = useState(false);
-    const [isShown4, setIsShown4] = useState(false);
+    const [show1, setShow1] = useState(false);
+    const [show2, setShow2] = useState(false);
+    const [show3, setShow3] = useState(false);
+    const [show4, setShow4] = useState(false);
     
     const projects = [{
         name: "Rickshaw Registry",
         tech: "React.js (JavaScript) / Express.js / MongoDB",
-        setShow: setIsShown4,
-        show: isShown4,
+        setShow: setShow4,
+        show: show4,
         img: project_04
     },{
         name: "Shop Local",
         tech: "React.js (JavaScript) / Express.js / Spring Boot (Java)",
-        setShow: setIsShown3,
-        show: isShown3,
+        setShow: setShow3,
+        show: show3,
         img: project_03
     },{
         name: "Cosmodex",
         tech: "Vue.js (JavaScript) / Express.js / MongoDB",
-        setShow: setIsShown2,
-        show: isShown2,
+        setShow: setShow2,
+        show: show2,
         img: project_02
     },{
         name: "My Destination",
         tech: "Flask (Python) / MySQL",
-        setShow: setIsShown1,
-        show: isShown1,
+        setShow: setShow1,
+        show: show1,
         img: project_01
     }]
 
