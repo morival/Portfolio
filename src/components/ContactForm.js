@@ -1,13 +1,18 @@
-import React, { useState } from "react";
-import emailjs from "emailjs-com";
+import dotenv from 'dotenv';
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import './contact.css';
 
+
+dotenv.config()
+
+
 const ContactForm = () => {
-  const [status, setStatus] = useState("Submit");
+  const [status, setStatus] = useState('Submit');
   function handleSubmit(e) {
     e.preventDefault();
     setStatus("Sending...");
-    emailjs.sendForm('service_i65egiq', 'template_bt9gzqs', e.target, 'user_LLai35aJu2cbdz6qblrbK')
+    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
           e.target.reset();
