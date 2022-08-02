@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from 'react';
 import './App.css';
 import Nav from './components/Nav';
 import Home from './components/Home';
@@ -7,28 +7,28 @@ import Projects from './components/Projects';
 // import Building from './components/Building';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Modal from './components/Modal';
+// import Modal from './components/Modal';
 
 
 
 function App() {
 
-  const [modal, setModal] = useState(null);
+  // const [modal, setModal] = useState(null);
 
-  const closeModalHandler = () => setModal(null);
+  // const closeModalHandler = () => setModal(null);
 
   return (
-    <div className="App">
-      {modal !== null
-        ? <div className="back-drop"
+    <div className='App'>
+      {/* {modal !== null
+        ? <div className='back-drop'
         onClick={closeModalHandler}>
-        <Modal modal={modal} close={closeModalHandler}/></div>
+          <Modal modal={modal} close={closeModalHandler}/></div>
         : null
-      }
+      } */}
       <Home/>
       <Nav/>
       <About/>
-      <Projects setModal={setModal}/>
+      <Projects/>
       {/* <Building/> */}
       <Contact/>
       <Footer/>

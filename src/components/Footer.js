@@ -30,7 +30,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="footnote">
-                    <p>MATT HARLOS <span className="highlight">©2021</span></p>
+                    <p>MATT HARLOS <span className="highlight">©2022</span></p>
                 </div>
             </div>
         </section>
